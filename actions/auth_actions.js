@@ -7,7 +7,7 @@ import {
 	FACEBOOK_LOGIN_SUCCESS,
 	FACEBOOK_LOGIN_FAIL,
 } from './types';
-import { FACEBOOK_KEY } from './tokens';
+import { FACEBOOK_KEY } from './keys';
 
 export const facebookLogin = () => async dispatch => {
 	let token = await AsyncStorage.getItem('fb_token');
@@ -22,7 +22,7 @@ export const facebookLogin = () => async dispatch => {
 
 // helper function to handle FB Login process logic
 const doFacebookLogin = async dispatch => {
-	let { type, token } = await Facebook.logInWithReadPermissionsAsync(FACEBOOK_TOKEN, {
+	let { type, token } = await Facebook.logInWithReadPermissionsAsync(FACEBOOK_KEY, {
 		permissions: ['public_profile']
 	});
 	
