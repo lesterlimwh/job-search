@@ -1,4 +1,4 @@
 node_modules/**/*
 .expo/*
 npm-debug.*
-actions/tokens.js
+actions/keys.js

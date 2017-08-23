@@ -1,0 +1,4 @@
+// assign your API keys here
+
+export const FACEBOOK_KEY = '123123123123123';
+export const INDEED_KEY = '123123123123123';

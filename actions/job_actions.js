@@ -7,7 +7,7 @@ import {
 	LIKE_JOB,
 	CLEAR_LIKED_JOBS
 } from './types';
-import { INDEED_TOKEN } from './tokens';
+import { INDEED_KEY } from './tokens';
 
 const JOB_ROOT_URL = 'http://api.indeed.com/ads/apisearch?';
 const JOB_QUERY_PARAMS = {

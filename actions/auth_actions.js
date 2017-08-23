@@ -7,7 +7,7 @@ import {
 	FACEBOOK_LOGIN_SUCCESS,
 	FACEBOOK_LOGIN_FAIL,
 } from './types';
-import { FACEBOOK_TOKEN } from './tokens';
+import { FACEBOOK_KEY } from './tokens';
 
 export const facebookLogin = () => async dispatch => {
 	let token = await AsyncStorage.getItem('fb_token');
